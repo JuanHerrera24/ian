@@ -5,6 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#ebd9b9">
 <title>Ian Esteban · Invitación</title>
+<meta name="description" content="Domingo 8 de noviembre, 3:00 p.m. · Hotel Parque Reservado, Pasto. ¡Te esperamos!">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Invitación de Ian Esteban">
+<meta property="og:url" content="https://ian-esteban.vercel.app/">
+<meta property="og:title" content="¡Estás invitado al cumpleaños de Ian Esteban!">
+<meta property="og:description" content="Domingo 8 de noviembre, 3:00 p.m. · Hotel Parque Reservado, Pasto. ¡Te esperamos!">
+<meta property="og:image" content="https://ian-esteban.vercel.app/preview.jpg">
+<meta property="og:image:secure_url" content="https://ian-esteban.vercel.app/preview.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Invitación al cumpleaños de Ian Esteban">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ian-esteban.vercel.app/preview.jpg">
+<link rel="preload" as="image" href="{{POSTER}}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -154,7 +169,7 @@ main{position:relative}
 /* Fotos */
 .gallery{display:flex;justify-content:center;gap:clamp(8px,3vw,18px)}
 .photo{width:min(27vw,150px);padding:7px 7px 22px;background:#fff;border-radius:4px;box-shadow:0 14px 30px rgba(80,50,20,.16);cursor:zoom-in;transition:transform .45s var(--ease),box-shadow .45s}
-.photo img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:2px}
+.photo img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:2px}
 .photo:nth-child(1){rotate:-4deg}
 .photo:nth-child(2){rotate:2deg;margin-top:18px}
 .photo:nth-child(3){rotate:-2deg}
@@ -349,6 +364,10 @@ html.scrolled .music{transform:translate(-50%,0);opacity:1;pointer-events:auto}
           <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4 4 7l2 4 2-1v10h8V10l2 1 2-4-4-3c-.6 1.4-2.1 2.4-4 2.4S8.6 5.4 8 4Z"/></svg></div>
           <div class="info-text"><h3>Código de vestuario</h3><p>Ropa cómoda, ideal para jugar y correr.</p></div>
         </div>
+        <div class="card info-row" data-r="left" style="align-items:center">
+          <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.5 7 8.5 6.5L20.5 7"/></svg></div>
+          <div class="info-text"><h3 style="margin:0;font-size:15px">Lluvia de sobres</h3></div>
+        </div>
       </div>
     </section>
 
@@ -360,9 +379,9 @@ html.scrolled .music{transform:translate(-50%,0);opacity:1;pointer-events:auto}
         <h2 class="title" data-words>Nuestro <em>campeón</em></h2>
       </div>
       <div class="gallery" data-stagger=".15">
-        <div class="photo" data-r="zoom"><img src="{{FOTO1}}" alt="Ian Esteban, foto 1"></div>
-        <div class="photo" data-r="zoom"><img src="{{FOTO2}}" alt="Ian Esteban, foto 2"></div>
-        <div class="photo" data-r="zoom"><img src="{{FOTO3}}" alt="Ian Esteban, foto 3"></div>
+        <div class="photo" data-r="zoom"><img src="{{FOTO1}}" alt="Ian Esteban, foto 1" style="object-position:center 75%"></div>
+        <div class="photo" data-r="zoom"><img src="{{FOTO2}}" alt="Ian Esteban, foto 2" style="object-position:center 75%"></div>
+        <div class="photo" data-r="zoom"><img src="{{FOTO3}}" alt="Ian Esteban, foto 3" style="object-position:center 100%"></div>
       </div>
     </section>
 
